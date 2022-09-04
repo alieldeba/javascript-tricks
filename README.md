@@ -11,7 +11,7 @@ console.log(x.lang) // "js"
 
 ## Explanation
 
-> This is beacause of the act of "Object.create" it stores the values of the object in the prototype (__proto__) and the delete keyword does not delete anything from the prototype (__proto__)
+> This is beacause of the act of "Object.create" it stores the values of the object in the prototype (__proto__) and the delete keyword does not delete anything from the prototype (__proto__).
 
 ---
 
@@ -25,7 +25,7 @@ var x = 10;
 
 ## Explanation
 
-> This is called [hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) this code will be compiled and be like this 
+> This is called [hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) this code will be compiled and be like this.
 > ```javascript
 > var x;
 >
@@ -33,7 +33,9 @@ var x = 10;
 >
 > x = 10;
 > ```
-> This only works with var keyword and does not work for let and const, so make that in mind. this works also with functions for example
+> 
+> This only works with var keyword and does not work for let and const, so make that in mind. this works also with functions for example.
+> 
 > ```javascript
 > sayHello();
 >
@@ -54,7 +56,7 @@ var x = 10;
 
 ## Explanation
 
-> Yes you can do this. this is called [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) it stands for immediately invoked function expression
+> Yes you can do this. this is called [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) it stands for immediately invoked function expression.
 
 ---
 
@@ -74,3 +76,25 @@ var x = 10;
 ## Explanation
 
 > The == (or !=) operator performs an automatic type conversion if needed. The === (or !==) operator will not perform any conversion. It compares the value and the type, which could be considered faster than ==.
+
+---
+
+## typeof javascript
+
+```javascript
+console.log(typeof 1) // number
+console.log(typeof NaN) // number
+console.log(typeof Infinity) // number
+console.log(typeof 1.003) // number
+console.log(typeof "1") // string
+console.log(typeof false) // boolean
+console.log(typeof {}) // object
+console.log(typeof []) // object
+console.log(typeof null) // object
+console.log(typeof new Set()) // object
+console.log(typeof __proto__) // function
+console.log(typeof function () {}) // function
+console.log(typeof class {}) // function
+console.log(typeof constructor) // function
+console.log(typeof window) // undefined
+```
