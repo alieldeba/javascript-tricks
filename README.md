@@ -47,8 +47,8 @@ var x = 10;
 ## Making self calling function
 
 ```javascript
-(function (lang) => {
-  console.log(`Hello, ${name}!`)
+(function (lang) {
+  console.log(`Hello, ${lang}!`)
 })("javascript") // Hello, javascript!
 ```
 
