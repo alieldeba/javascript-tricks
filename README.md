@@ -41,3 +41,17 @@ var x = 10;
 > console.log("Hello, World!")
 > }
 > ```
+
+---
+
+## Making self calling function
+
+```javascript
+(function (lang) => {
+  console.log(`Hello, ${name}!`)
+})("javascript") // Hello, javascript!
+```
+
+## Explanation
+
+> Yes you can do this. this is called [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) it stands for immediately invoked function expression
