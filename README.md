@@ -44,7 +44,7 @@ var x = 10;
 
 ---
 
-## Making self calling function
+## Making function call itself
 
 ```javascript
 (function (lang) {
@@ -55,6 +55,8 @@ var x = 10;
 ## Explanation
 
 > Yes you can do this. this is called [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) it stands for immediately invoked function expression
+
+---
 
 ## Use === instead of ==
 
