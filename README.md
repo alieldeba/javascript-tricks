@@ -55,3 +55,20 @@ var x = 10;
 ## Explanation
 
 > Yes you can do this. this is called [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) it stands for immediately invoked function expression
+
+## Use === instead of ==
+
+```javascript
+[10] === 10    // is false
+[10]  == 10    // is true
+'10' == 10     // is true
+'10' === 10    // is false
+ []   == 0     // is true
+ [] ===  0     // is false
+ '' == false   // is true but true == "a" is false
+ '' ===   false // is false 
+```
+
+## Explanation
+
+> The == (or !=) operator performs an automatic type conversion if needed. The === (or !==) operator will not perform any conversion. It compares the value and the type, which could be considered faster than ==.
