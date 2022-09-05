@@ -1,4 +1,4 @@
-## Printing object value after deleting it
+## :link: Printing object value after deleting it
 
 ```javascript
 const obj = {
@@ -15,7 +15,7 @@ console.log(x.lang) // "js"
 
 ---
 
-## Printing undefined instead of error
+## :link: Printing undefined instead of error
 
 ```javascript
 console.log(x) // undefined
@@ -46,7 +46,7 @@ var x = 10;
 
 ---
 
-## Making function call itself
+## :link: Making function call itself
 
 ```javascript
 (function (lang) {
@@ -60,7 +60,7 @@ var x = 10;
 
 ---
 
-## Use === instead of ==
+## :link: Use === instead of ==
 
 ```javascript
 [10] ===  10      // is false
@@ -79,7 +79,7 @@ var x = 10;
 
 ---
 
-## typeof javascript
+## :link: typeof javascript
 
 ```javascript
 console.log(typeof 1) // number
@@ -101,7 +101,7 @@ console.log(typeof window) // undefined
 
 ---
 
-## Return trick
+## :link: Return trick
 
 ```javascript
 function f1() {
