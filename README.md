@@ -142,3 +142,22 @@ console.log(f2()); // undefined
 >  }
 > }
 > ```
+
+---
+
+## :link: setTimeout order
+
+```javascript
+function orders() {
+  console.log(1);
+  setTimeout(() => console.log(2), 1000);
+  setTimeout(() => console.log(3), 0);
+  console.log(4);
+}
+
+orders() // 1, 4, 3, 2
+```
+
+## Explanation
+
+> The console.log executes first before the async functions (setTimout function) and then the async functions executes appending on who is the faster.
