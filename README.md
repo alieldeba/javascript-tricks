@@ -106,19 +106,19 @@ console.log(typeof window) // undefined
 ```javascript
 function f1() {
   return {
-    "Hello"
+    bar: "Hello"
   }
 }
 
 function f2() {
   return
   {
-  "Hello"
+    bar: "Hello"
   }
 }
 
-f1(); // "Hello"
-f2(); // undefined
+console.log(f1()); // {bar: "Hello"}
+console.log(f2()); // undefined
 ```
 
 ## Explanation 
@@ -128,7 +128,7 @@ f2(); // undefined
 > function f1() {
 >  return 
 >  {
->    "Hello"
+>    bar: "Hello"
 >  }
 > }
 > ```
@@ -138,7 +138,7 @@ f2(); // undefined
 > function f1() {
 >  return;
 >  {
->    "Hello"
+>    bar: "Hello"
 >  }
 > }
 > ```
