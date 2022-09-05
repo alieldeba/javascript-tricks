@@ -98,3 +98,47 @@ console.log(typeof class {}) // function
 console.log(typeof constructor) // function
 console.log(typeof window) // undefined
 ```
+
+---
+
+## Return trick
+
+```javascript
+function f1() {
+  return {
+    "Hello"
+  }
+}
+
+function f2() {
+  return
+  {
+  "Hello"
+  }
+}
+
+f1(); // "Hello"
+f2(); // undefined
+```
+
+## Explanation 
+
+> This is beacause of the semi colon that js compiler add at the end of the line, so it will be unreachable code. for example ...
+> ```javascript
+> function f1() {
+>  return 
+>  {
+>    "Hello"
+>  }
+> }
+> ```
+>
+> Will be ...
+> ```javascript
+> function f1() {
+>  return;
+>  {
+>    "Hello"
+>  }
+> }
+> ```
