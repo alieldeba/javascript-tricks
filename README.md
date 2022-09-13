@@ -40,7 +40,7 @@ var x = 10;
 > sayHello();
 >
 > function sayHello() {
-> console.log("Hello, World!")
+>   console.log("Hello, World!")
 > }
 > ```
 
