@@ -161,3 +161,14 @@ orders() // 1, 4, 3, 2
 ## Explanation
 
 > The console.log executes first before the async functions (setTimout function) and then the async functions executes appending on who is the faster.
+
+## Switch values by destructuring 
+
+```javascript
+let x = 5;
+let y = 10;
+
+[x, y] = [y, x];
+
+console.log(x, y) // 10, 5
+```
