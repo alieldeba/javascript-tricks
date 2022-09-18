@@ -172,3 +172,18 @@ let y = 10;
 
 console.log(x, y) // 10, 5
 ```
+
+## Explanation
+
+> Destructuring is very useful, this example is the same as :
+> ```javascript
+> let x = 5;
+> let y = 10;
+> let z;
+> 
+> z = x;
+> x = y;
+> y = z;
+>
+> console.log(x, y) // 10, 5
+> ```
