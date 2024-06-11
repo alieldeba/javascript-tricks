@@ -187,3 +187,17 @@ console.log(x, y) // 10, 5
 >
 > console.log(x, y) // 10, 5
 > ```
+
+## min > max
+
+```javascript
+console.log(Math.min() > Math.max()) // true
+```
+
+## Explanation
+
+> this is becuase Math.min() function prints Infinity when there is no parameters passed to be ensure that if any parameter passed it will certainly be smaller than Infinity meanwhile Math.max() function prints -Infinity if no parameters passed to be ensure that if any parameter passed it will certainly be greater than -Infinity, so you are likely printing Infinity > -Infinity that is true.
+> ```javascript
+> console.log(Math.min()) // Infinity
+> console.log(Math.max()) // -Infinity
+> ```
